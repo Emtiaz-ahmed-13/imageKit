@@ -70,7 +70,10 @@ fetch("/api/register", {
     headers: {
         "Content-Type": "application/json",
     },
-    body: JSON.stringify(), // Fixed typo in "password"
+    body: JSON.stringify({
+        email: "emtiaz2060@gmail.com",
+        password: "Emtiaz2060#",
+    }),
 })
     .then((response) => {
         if (!response.ok) {
